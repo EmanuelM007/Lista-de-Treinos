@@ -61,7 +61,7 @@ select {
     border-radius: 7px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     h1 {
         font-size: 30px;
     }
