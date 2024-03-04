@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./treino.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Separação de Treino</h1>
+        <form action="selecioneTreino">
+
+            <label for="selecione">Selecione seu treino:</label>
+            <select name="selecione" class="select">
+                <option value=".treinoA">Treino A:</option>
+                <option value=".treinoB">Treino B:</option>
+                <option value=".treinoC">Treino C:</option>
+                <option value=".treinoD">Treino D:</option>
+                <option value=".treinoE">Treino E:</option>
+            </select>
+            <button type="button" class="button_inp">Selecionar</button>
+        </form>
+    </main>
+    <dialog class="modal_controler treinoA"><!--open-->
+        <div class="modal_container">
+            <div>
+                <h2>Treino A</h2>
+                <p class="close_modalA">X</p>
+            </div>
+            <ul>
+                <li>
+                    <h3>Cadeira Abdutora</h3>
+                    <p>2 séries de 15 a 20 repetições, Grau de Intensidade (GI) 4.</p>
+                </li>
+                <li>
+                    <h3>Elevação Pélvica</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 série de 12 a 15 repetições, GI 3.</p>
+                    <p>1 série de 8 a 12 repetições, GI 3.</p>
+                    <p>1 série de 3 a 6 repetições, GI 4 (Desafiador, fazer com calma).</p>
+                </li>
+                <li>
+                    <h3>Agachamento Sumô no Smith</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 série de 12 a 15 repetições, GI 3.</p>
+                    <p>1 série de 8 a 12 repetições, GI 3.</p>
+                    <p>1 série de 8 a 12 repetições, GI 4 (Desafiador, fazer com calma).</p>
+                </li>
+                <li>
+                    <h3>Búlgaro</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 série de 12 a 15 repetições, GI 3.</p>
+                    <p>1 série de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Glúteo Polia</h3>
+                    <p>2 séries de 8 a 12 repetições, GI 4.</p>
+                    <p>Encontrar a carga para 8 a 12 repetições até falhar com o joelho estendido, após falhar,
+                        flexionar o joelho sem diminuir a carga e fazer o máximo possível de repetições.</p>
+                </li>
+                <li>
+                    <h3>Mesa Flexora</h3>
+                    <p>1 série de 15 a 20 repetições, GI 3.</p>
+                    <p>2 séries de 15 a 20 repetições, GI 4.</p>
+                    <p>Abs Prancha + Supra</p>
+                    <p>3 séries até a falha, GI 4.</p>
+                    <p>Aguentar o máximo de tempo na isometria de prancha, depois deitar e sem descansar fazer as abs
+                        supra até a falha. Isso é uma série.</p>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal_controler treinoB">
+        <div class="modal_container">
+            <div>
+                <h2>Treino B</h2>
+                <p class="close_modalB">X</p>
+            </div>
+            <ul>
+                <li>
+                    <h3>Puxada Alta Pegada Neutra Aberta</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 15 a 20 repetições, Grau de Intensidade (GI) 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Remada Baixa Pegada Neutra Triângulo</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                    <p>Periodização: Pirâmide de Cargas Adaptativo.</p>
+                </li>
+                <li>
+                    <h3>Desenvolvimento Máquina Pegada Neutra</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Elevação Lateral Sentada</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Supino Articulado Máquina</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Rosca Direta no Cabo</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                    <p>Periodização: Pirâmide de Cargas Adaptativo.</p>
+                </li>
+                <li>
+                    <h3>Tríceps Corda</h3>
+                    <p>2 sets de 15 a 20 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal_controler treinoC">
+        <div class="modal_container">
+            <div>
+                <h2>Treino C</h2>
+                <p class="close_modalC">X</p>
+            </div>
+            <ul>
+                <li>
+                    <h3>Agachamento Hack</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 12 a 15 repetições, Grau de Intensidade (GI) 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Extensora</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Leg Press</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>2 sets de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                    <p>Periodização: Pirâmide de Cargas Adaptativo.</p>
+                </li>
+                <li>
+                    <h3>Passada com Peso</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>3 sets de ida e volta, desafiando na última série (sensação de fadiga).</p>
+                </li>
+                <li>
+                    <h3>Cadeira Adutora</h3>
+                    <p>2 sets de 12 a 15 repetições, GI 4.</p>
+                    <p>2 segundos de isometria embaixo em todas as repetições.</p>
+                </li>
+                <li>
+                    <h3>Panturrilha Sentado</h3>
+                    <p>1 set de 12 a 15 repetições, GI 3.</p>
+                    <p>2 sets de 15 repetições, GI 4.</p>
+                    <p>3 repetições e 3 segundos de isometria alongando até completar as 15 repetições.</p>
+                </li>
+                <li>
+                    <h3>Abs Supra Cabo Polia Alta + Infra no Banco Inclinado</h3>
+                    <p>4 sets de 15 a 20 repetições, GI 4.</p>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal_controler treinoD">
+        <div class="modal_container">
+            <div>
+                <h2>Treino D</h2>
+                <p class="close_modalD">X</p>
+            </div>
+            <ul>
+                <li>
+                    <h3>Agachamento Terra Sumo</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 15 a 20 repetições, Grau de Intensidade (GI) 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                    <p>Periodização: Pirâmide de Cargas Adaptativo.</p>
+                </li>
+                <li>
+                    <h3>Flexão com Band</h3>
+                    <p>3 sets de 8 a 12 repetições, GI 4.</p>
+                    <p>Super slow: 2 segundos para descer, 2 segundos para subir + 2 segundos no pico de contração.</p>
+                </li>
+                <li>
+                    <h3>Stiff com Halter</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 12 a 15 repetições, GI 3.</p>
+                    <p>1 set de 12 a 15 repetições, GI 4.</p>
+                    <p>2 sets de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Agachamento Articulado</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 12 a 15 repetições, GI 3.</p>
+                    <p>2 sets de 8 a 12 repetições, GI 3.</p>
+                </li>
+                <li>
+                    <h3>Agachamento a Fundo no Smith com Estep no Pé da Frente</h3>
+                    <p>Progredir a carga entre as séries.</p>
+                    <p>1 set de 12 a 15 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 3.</p>
+                    <p>1 set de 8 a 12 repetições, GI 4.</p>
+                </li>
+                <li>
+                    <h3>Coice no Cabo</h3>
+                    <p>2 sets de 12 a 15 repetições, GI 4.</p>
+                    <p>Periodização: Pirâmide de Cargas Adaptativo.</p>
+                </li>
+                <li>
+                    <h3>Roda ABS + Infra com Caneleira</h3>
+                    <p>3 sets até a falha, GI 4.</p>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal_controler treinoE">
+        <div class="modal_container">
+            <div>
+                <h2>Treino E</h2>
+                <p class="close_modalE">X</p>
+            </div>
+        <ul>
+            <li>
+                <h3>Remada Articulada Pegada Neutra</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, Grau de Intensidade (GI) 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+            <li>
+                <h3>Puxada Alta Aberta Pegada Pronada</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+            <li>
+                <h3>Voador Invertido</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+                <li>Periodização: Pirâmide de Cargas Adaptativo.</li>
+            </li>
+            <li>
+                <h3>Desenvolvimento com Halter</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+            <li>
+                <h3>Elevação Frontal com Anilha</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+            <li>
+                <h3>Tríceps Testa com Halter</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+            <li>
+                <h3>Rosca Alternada</h3>
+                <li>Progredir a carga entre as séries.</li>
+                <li>2 sets de 15 a 20 repetições, GI 3.</li>
+                <li>1 set de 8 a 12 repetições, GI 4.</li>
+            </li>
+        </ul>
+        </div>
+    </dialog>
+</body>
+
+</html>

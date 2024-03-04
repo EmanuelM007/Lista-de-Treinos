@@ -1,0 +1,53 @@
+body{
+    font-family: Helvetica;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 25px;
+    background: url(./1a5d8c05200b6f1d9a56d8133b09923f.jpg) no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: rgb(173, 173, 173);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(173, 173, 173);
+    font-size: 25px;
+}
+select, button{
+    font-size: 20px;
+}
+
+dialog{
+    width: 60%;
+}
+.modal_container div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_container div p{
+    font-weight: 800;
+    cursor: pointer;
+    color: #7a0101;
+}
+
+.modal_container div p:hover{
+    font-size: 30px;
+    text-align: center;
+}
+
+button, select{
+    border: none;
+    border-radius: 7px;
+}
