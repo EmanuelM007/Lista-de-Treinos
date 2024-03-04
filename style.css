@@ -1,53 +1,83 @@
-body{
-    font-family: Helvetica;
-    box-sizing: border-box;
-    padding: 1rem;
-    font-size: 25px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background: url(./1a5d8c05200b6f1d9a56d8133b09923f.jpg) no-repeat;
     background-size: cover;
+    padding: 1rem;
+    font-size: 25px;
 }
-h1{
+
+h1 {
     text-align: center;
     color: rgb(173, 173, 173);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     font-size: 20px;
 }
-label{
+
+label {
     font-weight: bold;
     margin-bottom: 5px;
     color: rgb(173, 173, 173);
     font-size: 25px;
 }
-select, button{
+
+select,
+button {
     font-size: 20px;
 }
 
-dialog{
-    width: 60%;
+dialog {
+    width: 100%;
 }
-.modal_container div{
+
+.modal_container div {
     display: flex;
     justify-content: space-between;
 }
 
-.modal_container div p{
+.modal_container div p {
     font-weight: 800;
     cursor: pointer;
     color: #7a0101;
 }
 
-.modal_container div p:hover{
+.modal_container div p:hover {
     font-size: 30px;
     text-align: center;
 }
 
-button, select{
+button,
+select {
     border: none;
     border-radius: 7px;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
+    select, option{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    label{
+        font-size: 17px;
+    }
+    h1, label{
+        color: black;
+    }
+    body {
+        font-size: 17px;
+        background: url(./fundoCSS.png) no-repeat;
+        background-size: cover;
+    }
 }
